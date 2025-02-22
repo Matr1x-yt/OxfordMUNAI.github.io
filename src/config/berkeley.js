@@ -5,12 +5,19 @@ const openai = new OpenAI({
     dangerouslyAllowBrowser: true
 });
 
-const emptyThread = await openai.beta.threads.create();
+// Initialize the thread once and reuse it
+let emptyThread = null; 
+
+async function initializeThread() {
+    // Checks if thread is empty, and if it is then it creates one
+    if (!emptyThread) {
+        emptyThread = await openai.beta.threads.create();
+    }
+    return emptyThread;
+}
 
 async function runChat(prompt) {
-    const thread = await openai.beta.threads.retrieve(
-        emptyThread.id
-    );
+    const thread = await initializeThread(); // Use the same thread
 
     const message = await openai.beta.threads.messages.create(
         thread.id,
