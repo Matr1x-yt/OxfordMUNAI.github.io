@@ -1,0 +1,170 @@
+.main{
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+.main-container{
+    max-width: 950px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.main-container .greet{
+    margin: 50px 0px;
+    color: #858585;
+    font-weight: 500px;
+    padding: 20px;
+    padding-bottom: 75px;
+}
+
+.main-container .greet span{
+    font-size: 65px;
+    background: -webkit-linear-gradient(16deg,#656e7f,#194b86);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-container .greet p{
+    font-size: 50px;
+}
+
+.main-container .cards{
+    display: inline-flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.main-container .cards div{
+    flex: 1;
+    min-height: 200px;
+    height: 300px;
+    min-width: 100px;
+    max-width: 400px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-container .cards .cardnato {
+    background-image: url('../../assets/nato_icon.png');
+    background-size:500px;
+    background-position-x: center;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+.main-container .cards .cardbvc {
+    background-image: url('../../assets/bvc_icon.png');
+    background-size:275px;
+    background-position-x: center;
+    background-position-y: 75px;
+    background-repeat: no-repeat;
+}
+
+.main-container .cards div img{
+    width: 50px;
+    position: absolute;
+    background-color: white;
+    border-radius:50px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.main-container .cards div p{
+    color: #585858;
+    font-size: 25px;
+}
+
+.main-container .cards div:hover{
+    background-color: #dfe4ea;
+}
+
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.search-box img{
+    width: 24px;
+    cursor: pointer;
+}
+
+.search-box input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.search-box div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-bottom .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.result {
+    padding: 0px 0px;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar{
+    display: none;
+}
+
+.result-user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.result img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.result-message{
+    display: flex;
+    margin: 30px 0px;
+    align-items: start;
+    gap: 20px;
+}
+
+.result-message p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+github-md {
+    display: block;
+    max-width: 92.5%;
+}
