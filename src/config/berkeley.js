@@ -22,7 +22,7 @@ async function runChat(prompt) {
     const message = await openai.beta.threads.messages.create(
         thread.id,
         {
-          role: "user",
+          role: "user", 
           content: prompt
         }
       );
