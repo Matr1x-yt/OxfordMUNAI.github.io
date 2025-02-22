@@ -6,31 +6,44 @@ import { Context } from '../../context/Context'
 const Main = () => {
 
     const msgEnd = useRef(null);
+    const resultContainerRef = useRef(null);
 
-    const {onSent,showResult,loading,resultMessage,resultEnd,setInput,input,messages} = useContext(Context)
+    const {onSent,showResult,loading,resultMessage,resultEnd,setInput,input,messages, userScrolled, setUserScrolled, isAtBottom, setIsAtBottom} = useContext(Context)
 
     useEffect(() => {
         renderMarkdown(); // Refreshes the markdown format
-        msgEnd.current?.scrollIntoView();
+
+        // If the user has NOT scrolled up, auto-scroll
+        if (isAtBottom) {
+            msgEnd.current?.scrollIntoView({ behavior: 'smooth' });
+        }
     }, [messages, resultMessage]);
+
+    // Detects user scroll position
+    const handleScroll = () => {
+        if (!resultContainerRef.current) return;
+        const { scrollTop, scrollHeight, clientHeight } = resultContainerRef.current;
+        setIsAtBottom(scrollTop + clientHeight >= scrollHeight - 30);
+    };
 
     const enterPressed = async (e) => {
         if (e.key === 'Enter') {
             await sendMessage();
-            msgEnd.current?.scrollIntoView();
+            setIsAtBottom(true);
         }
     }
 
     const sendMessage = async () => {
         if (!loading && resultMessage === resultEnd) {
             await onSent();
-            msgEnd.current?.scrollIntoView();
+            setIsAtBottom(true);
         }
     }
 
     // Function to handle card clicks
     const handleCardClick = async (text) => {
         await onSent(text);  // Trigger the submission
+        setIsAtBottom(true);
     }
 
     return (
@@ -56,7 +69,7 @@ const Main = () => {
                 </>
                 :
                 <>
-                    <div className='result'>
+                    <div className='result' ref={resultContainerRef} onScroll={handleScroll}>
                         {messages.map((message, i) =>
                             <div key={i} className={!message.isBot?"result-user":"result-message"}>
                                 <img src={!message.isBot?assets.user_icon:assets.berkeley_icon} alt='' />
