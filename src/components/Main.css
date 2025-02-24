@@ -51,7 +51,7 @@
 }
 
 .main-container .cards .cardnato {
-    background-image: url('../../assets/nato_icon.png');
+    background-image: url('../assets/nato_icon.png');
     background-size:500px;
     background-position-x: center;
     background-position-y: 0px;
@@ -59,7 +59,7 @@
 }
 
 .main-container .cards .cardbvc {
-    background-image: url('../../assets/bvc_icon.png');
+    background-image: url('../assets/bvc_icon.png');
     background-size:275px;
     background-position-x: center;
     background-position-y: 75px;
