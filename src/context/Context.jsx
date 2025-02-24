@@ -11,7 +11,6 @@ const ContextProvider = (props) => {
     const [resultMessage,setResultMessage] = useState("");
     const [resultEnd, setResultEnd] = useState("");
     const [messages,setMessages] = useState([]);
-    const [userScrolled, setUserScrolled] = useState(false);
     const [isAtBottom, setIsAtBottom] = useState(true);
 
     const delayPara = (index,nextWord) => {
@@ -59,8 +58,6 @@ const ContextProvider = (props) => {
         input,
         setInput,
         messages,
-        userScrolled,
-        setUserScrolled,
         isAtBottom,
         setIsAtBottom
     }
