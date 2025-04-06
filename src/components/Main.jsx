@@ -66,11 +66,11 @@ const Main = () => {
                                 <p>World Health Organization (WHO)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="carda-UNDP" onClick={(e) => handleCardClick("UN DEVELOPMENT PROGRAMME (UNDP)")}>
+                            <div className="card-UNDP" onClick={(e) => handleCardClick("UN DEVELOPMENT PROGRAMME (UNDP)")}>
                                 <p>UN Development Programme (UNDP)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-DIS" onClick={(e) => handleCardClick("Disarmament & International Security (DISEC)")}>
+                            <div className="card-DISEC" onClick={(e) => handleCardClick("Disarmament & International Security (DISEC)")}>
                                 <p>Disarmament & International Security (DISEC)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
@@ -80,16 +80,16 @@ const Main = () => {
                                 <p>African Union</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-economic" onClick={(e) => handleCardClick("Economic and Financial Committee (ECOFIN)")}>
-                                <p>Economic and Financial Committee (ECOFIN)</p>
+                            <div className="card-ECOFIN" onClick={(e) => handleCardClick("Economic and Financial Committee")}>
+                                <p>Economic and Financial Committee</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-uk" onClick={(e) => handleCardClick("UK Parliament (UK House of Commons)")}>
+                            <div className="card-UK" onClick={(e) => handleCardClick("UK Parliament (UK House of Commons)")}>
                                 <p>UK Parliament (UK House of Commons)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-international" onClick={(e) => handleCardClick("International Telecommunication Union (ITU)")}>
-                                <p>International Telecommunication Union (ITU)</p>
+                            <div className="card-ITU" onClick={(e) => handleCardClick("International Telecommunication Union")}>
+                                <p>International Telecommunication Union</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
                         </div>

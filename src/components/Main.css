@@ -62,22 +62,41 @@
     border-radius: 10px;
     position: relative;
     cursor: pointer;
-}
-
-.main-container .cards .cardeuro {
-    background-image: url('../assets/european_commision_icon.png');
-    background-size:200px;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-}
-
-.main-container .cards .card-ccpcj {
-    background-image: url('../assets/crime_prevention_icon.png');
-    background-size:275px;
     background-position-x: center;
     background-position-y: 75px;
     background-repeat: no-repeat;
+}
+
+.main-container .cards .card-UNEP {
+    background-image: url('../assets/UNEP_icon.png');
+}
+
+.main-container .cards .card-WHO {
+    background-image: url('../assets/WHO_icon.png');
+}
+
+.main-container .cards .card-UNDP {
+    background-image: url('../assets/UN_icon.png');
+}
+
+.main-container .cards .card-DISEC {
+    background-image: url('../assets/DISEC_icon.png');
+}
+
+.main-container .cards .card-african {
+    background-image: url('../assets/african_union_icon.png');
+}
+
+.main-container .cards .card-ECOFIN {
+    background-image: url('../assets/ECOFIN_icon.png');
+}
+
+.main-container .cards .card-UK {
+    background-image: url('../assets/UK_parliament_icon.png');
+}
+
+.main-container .cards .card-ITU {
+    background-image: url('../assets/ITU_icon.png');
 }
 
 .main-container .cards div div img{
