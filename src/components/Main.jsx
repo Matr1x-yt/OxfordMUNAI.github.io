@@ -58,20 +58,20 @@ const Main = () => {
                     </div>
                     <div className="cards">
                         <div className="general-assemblies">
-                            <div className="card-UNEP" onClick={(e) => handleCardClick("UN ENVIRONMENT PROGRAMME")}>
-                                <p>UN ENVIRONMENT PROGRAMME</p>
+                            <div className="card-UNEP" onClick={(e) => handleCardClick("UN ENVIRONMENT PROGRAMME (UNEP)")}>
+                                <p>UN Environment Programme (UNEP)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-WHO" onClick={(e) => handleCardClick("World Health Organization")}>
-                                <p>World Health Organization</p>
+                            <div className="card-WHO" onClick={(e) => handleCardClick("World Health Organization (WHO)")}>
+                                <p>World Health Organization (WHO)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="carda-UNDP" onClick={(e) => handleCardClick("UN DEVELOPMENT PROGRAMME")}>
-                                <p>UN DEVELOPMENT PROGRAMME</p>
+                            <div className="carda-UNDP" onClick={(e) => handleCardClick("UN DEVELOPMENT PROGRAMME (UNDP)")}>
+                                <p>UN Development Programme (UNDP)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-DIS" onClick={(e) => handleCardClick("Disarmament & International Security")}>
-                                <p>Disarmament & International Security</p>
+                            <div className="card-DIS" onClick={(e) => handleCardClick("Disarmament & International Security (DISEC)")}>
+                                <p>Disarmament & International Security (DISEC)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
                         </div>
@@ -80,16 +80,16 @@ const Main = () => {
                                 <p>African Union</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-economic" onClick={(e) => handleCardClick("Economic and Financial Committee")}>
-                                <p>Economic and Financial Committee</p>
+                            <div className="card-economic" onClick={(e) => handleCardClick("Economic and Financial Committee (ECOFIN)")}>
+                                <p>Economic and Financial Committee (ECOFIN)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-uk" onClick={(e) => handleCardClick("UK Parliament")}>
-                                <p>UK Parliament</p>
+                            <div className="card-uk" onClick={(e) => handleCardClick("UK Parliament (UK House of Commons)")}>
+                                <p>UK Parliament (UK House of Commons)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-international" onClick={(e) => handleCardClick("International Telecommunication Union")}>
-                                <p>International Telecommunication Union</p>
+                            <div className="card-international" onClick={(e) => handleCardClick("International Telecommunication Union (ITU)")}>
+                                <p>International Telecommunication Union (ITU)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
                         </div>
@@ -98,8 +98,8 @@ const Main = () => {
                                 <p>Korean War (Flagship Committee)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
-                            <div className="card-LOTR" onClick={(e) => handleCardClick("Lord of the Rings")}>
-                                <p>Lord of the Rings</p>
+                            <div className="card-LOTR" onClick={(e) => handleCardClick("Lord of the Rings (LOTR)")}>
+                                <p>Lord of the Rings (LOTR)</p>
                                 <img src={assets.oxford_icon} alt="" />
                             </div>
                         </div>
