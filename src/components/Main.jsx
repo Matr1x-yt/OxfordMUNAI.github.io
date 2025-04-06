@@ -53,17 +53,55 @@ const Main = () => {
                 ?
                 <>
                     <div className="greet">
-                        <p><span>Hello, Welcome to BMUN AI.</span></p>
+                        <p><span>Hello, Welcome to OxfordMUN AI.</span></p>
                         <p>Please pick a conference type.</p>
                     </div>
                     <div className="cards">
-                        <div className="cardnato" onClick={(e) => handleCardClick("North Atlantic Treaty Organization (NATO)")}>
-                            <p>North Atlantic Treaty Organization (NATO)</p>
-                            <img src={assets.berkeley_icon} alt="" />
+                        <div className="general-assemblies">
+                            <div className="card-UNEP" onClick={(e) => handleCardClick("UN ENVIRONMENT PROGRAMME")}>
+                                <p>UN ENVIRONMENT PROGRAMME</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
+                            <div className="card-WHO" onClick={(e) => handleCardClick("World Health Organization")}>
+                                <p>World Health Organization</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
+                            <div className="carda-UNDP" onClick={(e) => handleCardClick("UN DEVELOPMENT PROGRAMME")}>
+                                <p>UN DEVELOPMENT PROGRAMME</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
+                            <div className="card-DIS" onClick={(e) => handleCardClick("Disarmament & International Security")}>
+                                <p>Disarmament & International Security</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
                         </div>
-                        <div className="cardbvc" onClick={(e) => handleCardClick("Berkley Venture Capital (BVC)")}>
-                            <p>Berkley Venture Capital (BVC)</p>
-                            <img src={assets.berkeley_icon} alt="" />
+                        <div className="specialized-agencies">
+                            <div className="card-african" onClick={(e) => handleCardClick("African Union")}>
+                                <p>African Union</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
+                            <div className="card-economic" onClick={(e) => handleCardClick("Economic and Financial Committee")}>
+                                <p>Economic and Financial Committee</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
+                            <div className="card-uk" onClick={(e) => handleCardClick("UK Parliament")}>
+                                <p>UK Parliament</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
+                            <div className="card-international" onClick={(e) => handleCardClick("International Telecommunication Union")}>
+                                <p>International Telecommunication Union</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
+                        </div>
+                        <div className="crisis-committees">
+                            <div className="card-KoreanWar" onClick={(e) => handleCardClick("Korean War")}>
+                                <p>Korean War (Flagship Committee)</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
+                            <div className="card-LOTR" onClick={(e) => handleCardClick("Lord of the Rings")}>
+                                <p>Lord of the Rings</p>
+                                <img src={assets.oxford_icon} alt="" />
+                            </div>
                         </div>
                     </div>
                 </>
@@ -72,7 +110,7 @@ const Main = () => {
                     <div className='result' ref={resultContainerRef} onScroll={handleScroll}>
                         {messages.map((message, i) =>
                             <div key={i} className={!message.isBot?"result-user":"result-message"}>
-                                <img src={!message.isBot?assets.user_icon:assets.berkeley_icon} alt='' />
+                                <img src={!message.isBot?assets.user_icon:assets.oxford_icon} alt='' />
                                 {message.isBot?
                                     <github-md dangerouslySetInnerHTML={{ __html: i === messages.length - 1 ? resultMessage : message.text }}></github-md>
                                     :
@@ -92,7 +130,7 @@ const Main = () => {
                             </div>
                         </div>
                         <p className='bottom-info'>
-                        BMUN AI might display inaccurate info so double check its response.
+                        OxfordMUN AI might display inaccurate info so double check its response.
                         </p>
                     </div>
                 </>
