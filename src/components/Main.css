@@ -142,17 +142,6 @@
     cursor: pointer;
 }
 
-/* .search-box input{
-    flex: 1;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 8px;
-    font-size: 18px;
-    overflow-wrap: normal;
-    text-wrap: wrap;
-} */
-
 .search-box textarea {
     flex: 1;
     resize: none;
