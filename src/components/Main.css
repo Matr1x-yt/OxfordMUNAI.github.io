@@ -45,7 +45,7 @@
     align-self: center;
     justify-self: center;
     align-items: center;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .main-container .cards div{
