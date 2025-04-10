@@ -22,7 +22,6 @@ const Main = () => {
         // If the user has NOT scrolled up, auto-scroll
         if (isAtBottom) {
             msgEnd.current?.scrollIntoView();
-            // msgEnd.current?.scrollIntoView({ behavior: 'smooth' });
         }
     }, [messages, resultMessage]);
 
@@ -130,7 +129,6 @@ const Main = () => {
                     </div>
                     <div className="main-bottom">
                         <div className="search-box">
-                            {/* <input onChange={(e)=>setInput(e.target.value)} value={input} onKeyDown={enterPressed} type='text' placeholder='Enter a prompt here'/> */}
                             <textarea
                                 value={input}
                                 onChange={(e) => {
