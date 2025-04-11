@@ -7,6 +7,8 @@ import african_union_icon from './african_union_icon.png'
 import DISEC_icon from './DISEC_icon.png'
 import ECOFIN_icon from './ECOFIN_icon.png'
 import ITU_icon from './ITU_icon.png'
+import kWar_icon from './kWar_icon.png'
+import LOTR_icon from './LOTR_icon.png'
 import UK_parliament_icon from './UK_parliament_icon.png'
 import UN_icon from './UN_icon.png'
 import UNEP_icon from './UNEP_icon.png'
@@ -22,6 +24,8 @@ export const assets = {
     DISEC_icon,
     ECOFIN_icon,
     ITU_icon,
+    kWar_icon,
+    LOTR_icon,
     UK_parliament_icon,
     UN_icon,
     UNEP_icon,

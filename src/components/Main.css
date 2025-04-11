@@ -1,3 +1,22 @@
+/* @media screen and (min-width: 1900px) {
+    .greet {
+      transform: scale(1.25);
+      transform-origin: center;
+    }
+    .cards {
+        transform: scale(1.25);
+        transform-origin: center;
+    }
+    .result {
+        transform: scale(1.25);
+        transform-origin: center;
+    }
+    .main-bottom {
+        transform: scale(1.25);
+        transform-origin: center;
+    }
+} */
+
 .main{
     flex: 1;
     min-height: 100vh;
@@ -97,6 +116,14 @@
 
 .main-container .cards .card-ITU {
     background-image: url('../assets/ITU_icon.png');
+}
+
+.main-container .cards .card-KoreanWar {
+    background-image: url('../assets/kWar_icon.png');
+}
+
+.main-container .cards .card-LOTR {
+    background-image: url('../assets/LOTR_icon.png');
 }
 
 .main-container .cards div div img{
