@@ -5,14 +5,14 @@
     }
     .cards {
         transform: scale(1.25);
-        transform-origin: center;
+        transform-origin: bottom center;
     }
     .result {
-        transform: scale(1.25);
+        transform: scale(1.2);
         transform-origin: center;
     }
     .main-bottom {
-        transform: scale(1.25);
+        transform: scale(1.2);
         transform-origin: center;
     }
 }
