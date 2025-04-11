@@ -9,7 +9,7 @@
     }
     .result {
         transform: scale(1.2);
-        transform-origin: center;
+        transform-origin: top center;
     }
     .main-bottom {
         transform: scale(1.2);
