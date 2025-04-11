@@ -148,7 +148,7 @@ const Main = () => {
                             </div>
                         </div>
                         <p className='bottom-info'>
-                        OxfordMUN AI might display inaccurate info so double check its response.
+                        OxfordMUN AI might display inaccurate info so double check its response and please refer to official documents.
                         </p>
                     </div>
                 </>
