@@ -111,6 +111,9 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
+                    <p className="disclaimer">
+                    This is an experimental project done by students of the Oxford Team. In no way should you rely solely on the AI for research and Rules of Procedure. If you run into issues, please refer to official documents.
+                    </p>
                 </>
                 :
                 <>
