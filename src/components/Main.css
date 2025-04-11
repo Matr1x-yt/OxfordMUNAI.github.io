@@ -17,43 +17,6 @@
     }
 } */
 
-@media screen and (min-width: 1180px) {
-    html {
-        font-size: 110%;
-    }
-    .main-container .greet {
-        font-size: 62px;
-    }
-    .main-container .greet span {
-        font-size: 66px;
-    }
-    .main-container .greet p {
-        font-size: 56px;
-    }
-    .main-container .cards div div {
-        height: 220px;
-        width: 230px;
-    }
-    .main-container .cards div div p {
-        font-size: 20px;
-    }
-    .main-container .cards div div img {
-        width: 44px;
-    }
-    .search-box img {
-        width: 28px;
-    }
-    .search-box textarea {
-        font-size: 20px;
-    }
-    .main-bottom .bottom-info {
-        font-size: 15px;
-    }
-    .result-message p {
-        font-size: 19px;
-    }
-}
-
 .main{
     flex: 1;
     min-height: 100vh;
