@@ -17,232 +17,214 @@
     }
 } */
 
-.main{
-    flex: 1;
-    min-height: 100vh;
-    position: relative;
-}
-
-.main-container{
-    max-width: 900px;
-    height: 100vh;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: visible;
-}
-
-.main-container .greet{
-    margin-top: 50px;
-    font-size: 56px;
-    color: #c4c7c5;
-    font-weight: 500px;
-    text-align: left;
-}
-
-.main-container .greet span{
-    font-size: 60px;
-    background: -webkit-linear-gradient(16deg,#656e7f,#194b86);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.main-container .greet p{
-    font-size: 50px;
-}
-
-.main-container .cards{
-    margin-top: 15%;
-    display: flex;
-    flex-direction: column;
-    min-height: 225px;
-    gap: 20px;
-    flex: 1;
-    align-self: center;
-    justify-self: center;
-    align-items: center;
-    overflow-y: auto;
-}
-
-.main-container .cards div{
-    display: inline-flex;
-    gap: 20px;
-}
-
-.main-container .cards div div{
-    flex: 1;
-    height: 200px;
-    width: 210px;
-    padding: 15px;
-    background-color: #f0f4f9;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-    background-position-x: center;
-    background-position-y: 75px;
-    background-repeat: no-repeat;
-}
-
-.main-container .cards .card-UNEP {
-    background-image: url('../assets/UNEP_icon.png');
-}
-
-.main-container .cards .card-WHO {
-    background-image: url('../assets/WHO_icon.png');
-}
-
-.main-container .cards .card-UNDP {
-    background-image: url('../assets/UN_icon.png');
-}
-
-.main-container .cards .card-DISEC {
-    background-image: url('../assets/DISEC_icon.png');
-}
-
-.main-container .cards .card-african {
-    background-image: url('../assets/african_union_icon.png');
-}
-
-.main-container .cards .card-ECOFIN {
-    background-image: url('../assets/ECOFIN_icon.png');
-}
-
-.main-container .cards .card-UK {
-    background-image: url('../assets/UK_parliament_icon.png');
-}
-
-.main-container .cards .card-ITU {
-    background-image: url('../assets/ITU_icon.png');
-}
-
-.main-container .cards .card-KoreanWar {
-    background-image: url('../assets/kWar_icon.png');
-}
-
-.main-container .cards .card-LOTR {
-    background-image: url('../assets/LOTR_icon.png');
-}
-
-.main-container .cards div div img{
-    width: 40px;
-    padding: 5px;
-    position: absolute;
-    background-color: white;
-    border-radius:50px;
-    bottom: 10px;
-    right: 10px;
-}
-
-.main-container .cards div div p{
-    color: #585858;
-    font-size: 18px;
-}
-
-.main-container .cards div div:hover{
-    background-color: #dfe4ea;
-}
-
-.disclaimer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: 750px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.main-bottom{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: 900px;
-    padding: 0px 20px;
-    margin: auto;
-}
-
-.search-box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    background-color: #f0f4f9;
-    padding: 10px 20px;
-    border-radius: 50px;
-}
-
-.search-box img{
-    width: 24px;
-    cursor: pointer;
-}
-
-.search-box textarea {
-    flex: 1;
-    resize: none;
-    height: 35px;
-    max-height: 100px;
-    overflow-y: auto;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 8px;
-    font-size: 18px;
-    font-family: inherit;
-    line-height: 1;
-}
-
-.search-box div{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.main-bottom .bottom-info{
-    font-size: 13px;
-    margin: 15px auto;
-    text-align: center;
-    font-weight: 300;
-}
-
-.result {
-    padding: 0px 0px;
-    width: 100%;
-    max-height: 80vh;
-    overflow-y: scroll;
-}
-
-.result::-webkit-scrollbar{
-    display: none;
-}
-
-.result-user{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.result img{
-    width: 40px;
-    border-radius: 50%;
-}
-
-.result-message{
-    display: flex;
-    margin: 30px 0px;
-    align-items: start;
-    gap: 20px;
-}
-
-.result-message p{
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 1.8;
-}
-
-github-md {
-    display: block;
-    max-width: 92.5%;
-}
+html {
+    font-size: 16px;
+  }
+  
+  .main{
+      flex: 1;
+      min-height: 100vh;
+      position: relative;
+  }
+  
+  .main-container{
+      max-width: 1170px;
+      height: 100vh;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 10vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: visible;
+  }
+  
+  .main-container .greet{
+      margin-top: 50px;
+      font-size: 56px;
+      color: #c4c7c5;
+      font-weight: 500;
+      text-align: center;
+      white-space: nowrap;
+  }
+  
+  .main-container .greet span{
+      font-size: 60px;
+      background: -webkit-linear-gradient(16deg,#656e7f,#194b86);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+  }
+  
+  .main-container .greet p{
+      font-size: 50px;
+      text-align: left;
+      white-space: nowrap;
+  }
+  
+  .main-container .cards{
+      margin-top: 10vh;
+      display: flex;
+      flex-direction: column;
+      min-height: 225px;
+      gap: 20px;
+      flex: 1;
+      align-self: center;
+      justify-self: center;
+      align-items: center;
+      overflow-y: auto;
+  }
+  
+  .main-container .cards div{
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .main-container .cards div div{
+      flex: 1;
+      height: 200px;
+      width: 210px;
+      padding: 15px;
+      background-color: #f0f4f9;
+      border-radius: 10px;
+      position: relative;
+      cursor: pointer;
+      background-position-x: center;
+      background-position-y: 75px;
+      background-repeat: no-repeat;
+  }
+  
+  .main-container .cards .card-UNEP { background-image: url('../assets/UNEP_icon.png'); }
+  .main-container .cards .card-WHO { background-image: url('../assets/WHO_icon.png'); }
+  .main-container .cards .card-UNDP { background-image: url('../assets/UN_icon.png'); }
+  .main-container .cards .card-DISEC { background-image: url('../assets/DISEC_icon.png'); }
+  .main-container .cards .card-african { background-image: url('../assets/african_union_icon.png'); }
+  .main-container .cards .card-ECOFIN { background-image: url('../assets/ECOFIN_icon.png'); }
+  .main-container .cards .card-UK { background-image: url('../assets/UK_parliament_icon.png'); }
+  .main-container .cards .card-ITU { background-image: url('../assets/ITU_icon.png'); }
+  .main-container .cards .card-KoreanWar { background-image: url('../assets/kWar_icon.png'); }
+  .main-container .cards .card-LOTR { background-image: url('../assets/LOTR_icon.png'); }
+  
+  .main-container .cards div div img{
+      width: 40px;
+      padding: 5px;
+      position: absolute;
+      background-color: white;
+      border-radius:50px;
+      bottom: 10px;
+      right: 10px;
+  }
+  
+  .main-container .cards div div p{
+      color: #585858;
+      font-size: 18px;
+  }
+  
+  .main-container .cards div div:hover{
+      background-color: #dfe4ea;
+  }
+  
+  .disclaimer{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      max-width: 750px;
+      padding-bottom: 10px;
+      text-align: center;
+  }
+  
+  .main-bottom{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      max-width: 1170px;
+      padding: 0px 20px;
+      margin: auto;
+  }
+  
+  .search-box{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      background-color: #f0f4f9;
+      padding: 10px 20px;
+      border-radius: 50px;
+  }
+  
+  .search-box img{
+      width: 24px;
+      cursor: pointer;
+  }
+  
+  .search-box textarea {
+      flex: 1;
+      resize: none;
+      height: 35px;
+      max-height: 100px;
+      overflow-y: auto;
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 8px;
+      font-size: 18px;
+      font-family: inherit;
+      line-height: 1;
+  }
+  
+  .search-box div{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  }
+  
+  .main-bottom .bottom-info{
+      font-size: 13px;
+      margin: 15px auto;
+      text-align: center;
+      font-weight: 300;
+  }
+  
+  .result {
+      padding: 0px 0px;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: scroll;
+  }
+  
+  .result::-webkit-scrollbar{
+      display: none;
+  }
+  
+  .result-user{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  }
+  
+  .result img{
+      width: 40px;
+      border-radius: 50%;
+  }
+  
+  .result-message{
+      display: flex;
+      margin: 30px 0px;
+      align-items: start;
+      gap: 20px;
+  }
+  
+  .result-message p{
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.8;
+  }
+  
+  github-md {
+      display: block;
+      max-width: 92.5%;
+  }
+  
