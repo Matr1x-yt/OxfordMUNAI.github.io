@@ -76,7 +76,7 @@
 .main-container .cards div div{
     flex: 1;
     height: 25.16vh;
-    width: 26.41vh;
+    width: 17vw;
     padding: 0.94rem;
     background-color: #f0f4f9;
     border-radius: 1.25vh;
@@ -84,6 +84,7 @@
     cursor: pointer;
     background-position-x: center;
     background-position-y: 4.7rem;
+    background-size: 50%;
     background-repeat: no-repeat;
 }
 
