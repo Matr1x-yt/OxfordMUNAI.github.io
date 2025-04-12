@@ -24,10 +24,10 @@
 }
 
 .main-container{
-    max-width: 900px;
+    max-width: 77.5vw;
     height: 100vh;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 2.5vh;
     padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
@@ -36,15 +36,15 @@
 }
 
 .main-container .greet{
-    margin-top: 50px;
-    font-size: 56px;
+    margin-top: 6vh;
+    font-size: 3.5rem;
     color: #c4c7c5;
-    font-weight: 500px;
+    font-weight: 31.25rem;
     text-align: left;
 }
 
 .main-container .greet span{
-    font-size: 60px;
+    font-size: 4rem;
     background: -webkit-linear-gradient(16deg,#656e7f,#194b86);
     background-clip: text;
     -webkit-background-clip: text;
@@ -52,15 +52,15 @@
 }
 
 .main-container .greet p{
-    font-size: 50px;
+    font-size: 3.15rem;
 }
 
 .main-container .cards{
     margin-top: 15%;
     display: flex;
     flex-direction: column;
-    min-height: 225px;
-    gap: 20px;
+    min-height: 28.3vh;
+    gap: 1.25rem;
     flex: 1;
     align-self: center;
     justify-self: center;
@@ -70,20 +70,20 @@
 
 .main-container .cards div{
     display: inline-flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .main-container .cards div div{
     flex: 1;
-    height: 200px;
-    width: 210px;
-    padding: 15px;
+    height: 25.16vh;
+    width: 26.41vh;
+    padding: 0.94rem;
     background-color: #f0f4f9;
-    border-radius: 10px;
+    border-radius: 1.25vh;
     position: relative;
     cursor: pointer;
     background-position-x: center;
-    background-position-y: 75px;
+    background-position-y: 4.7rem;
     background-repeat: no-repeat;
 }
 
@@ -128,18 +128,18 @@
 }
 
 .main-container .cards div div img{
-    width: 40px;
-    padding: 5px;
+    width: 5vh;
+    padding: 0.3rem;
     position: absolute;
     background-color: white;
-    border-radius:50px;
-    bottom: 10px;
-    right: 10px;
+    border-radius:3.125rem;
+    bottom: 0.625rem;
+    right: 0.625rem;
 }
 
 .main-container .cards div div p{
     color: #585858;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .main-container .cards div div:hover{
@@ -150,7 +150,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    max-width: 750px;
+    max-width: 57.5vw;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -159,8 +159,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    max-width: 900px;
-    padding: 0px 20px;
+    max-width: 77.5vw;
+    padding: 0rem 1.25rem;
     margin: auto;
 }
 
@@ -168,28 +168,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.25rem;
     background-color: #f0f4f9;
-    padding: 10px 20px;
-    border-radius: 50px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 3.125rem;
 }
 
 .search-box img{
-    width: 24px;
+    width: 2vw;
     cursor: pointer;
 }
 
 .search-box textarea {
     flex: 1;
     resize: none;
-    height: 35px;
-    max-height: 100px;
+    height: 4.4vh;
+    max-height: 12.58vh;
     overflow-y: auto;
     background: transparent;
     border: none;
     outline: none;
-    padding: 8px;
-    font-size: 18px;
+    padding: 0.5rem;
+    font-size: 1.125rem;
     font-family: inherit;
     line-height: 1;
 }
@@ -197,18 +197,18 @@
 .search-box div{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.94rem;
 }
 
 .main-bottom .bottom-info{
-    font-size: 13px;
-    margin: 15px auto;
+    font-size: 0.81rem;
+    margin: 0.94rem auto;
     text-align: center;
     font-weight: 300;
 }
 
 .result {
-    padding: 0px 0px;
+    padding: 0rem;
     width: 100%;
     max-height: 80vh;
     overflow-y: scroll;
@@ -221,23 +221,23 @@
 .result-user{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .result img{
-    width: 40px;
+    width: 2.5rem;
     border-radius: 50%;
 }
 
 .result-message{
     display: flex;
-    margin: 30px 0px;
+    margin: 1.875rem 0rem;
     align-items: start;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .result-message p{
-    font-size: 17px;
+    font-size: 1.06rem;
     font-weight: 300;
     line-height: 1.8;
 }
