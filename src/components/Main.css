@@ -27,7 +27,6 @@
     max-width: 900px;
     height: 100vh;
     margin: auto;
-    padding-top: 20px;
     padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
@@ -36,7 +35,6 @@
 }
 
 .main-container .greet{
-    margin-top: 50px;
     font-size: 56px;
     color: #c4c7c5;
     font-weight: 500px;
