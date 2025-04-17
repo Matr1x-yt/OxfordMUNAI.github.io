@@ -35,6 +35,7 @@
 }
 
 .main-container .greet{
+    padding-top: 20px;
     font-size: 56px;
     color: #c4c7c5;
     font-weight: 500px;
